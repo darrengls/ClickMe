@@ -59,3 +59,5 @@ This project is open-source and available under the MIT License. Feel free to fo
 ---
 
 Enjoy the game and challenge your friends to catch the fleeing button faster!
+
+![Game Screenshot](game.png)
