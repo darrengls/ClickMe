@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border: 5px solid #0d0d0d;
+}
+
+.stats {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 18px;
+    text-align: right;
+    font-weight: 500;
+}
+
+#resetButton {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #ff4f41;
+}
+
+.button-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wingAnimation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#fleeButton {
+    position: relative;
+    z-index: 2;
+    padding: 15px 50px;
+    font-size: 20px;
+    color: #0d0d0d;
+    background: linear-gradient(45deg, #ff6f61, #ffca28);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 112, 67, 0.6), 0 0 40px rgba(255, 202, 40, 0.4);
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#fleeButton:hover {
+    box-shadow: 0 0 30px rgba(255, 112, 67, 0.8), 0 0 50px rgba(255, 202, 40, 0.6);
+}
